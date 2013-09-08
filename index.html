@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>nathandodder.github.io by nathandodder</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>nathandodder.github.io</h1>
+        <h2>Mass Spectrometry Data Analysis</h2>
+        <a href="https://github.com/nathandodder" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="orgmassspecr" class="anchor" href="#orgmassspecr"><span class="octicon octicon-link"></span></a>OrgMassSpecR</h1>
+
+<p>OrgMassSpecR is an extension for the <a href="http://www.r-project.org/">R</a> statistical computing language. It contains functions to assist with organic/biological mass spectrometry data analysis. Mass spectral libraries are included as companion packages.</p>
+
+<p>This project is under continuous development. The stable version is on <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/index.html">CRAN</a>. The development version is on <a href="https://github.com/nathandodder/OrgMassSpecR">GitHub</a>.</p>
+
+<p>Examples are in the package vignette <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/vignettes/OrgMassSpecR-examples.pdf">(PDF)</a>.</p>
+
+<h2>
+<a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
+
+<h3>
+<a name="general" class="anchor" href="#general"><span class="octicon octicon-link"></span></a>General</h3>
+
+<ul>
+<li>
+<code>MolecularWeight</code>: Calculate the molecular weight of an organic molecule.</li>
+<li>
+<code>MonoisotopicMass</code>: Calculate the monoisotopic mass or monoisotopic m/z value of an organic molecule.</li>
+<li>
+<code>IsotopicDistribution</code>: Simulate the isotopic distribution of an organic molecule.</li>
+<li>
+<code>ListFormula</code>: Convert a character string representing an elemental formula to a list representing the elemental formula.</li>
+<li>
+<code>DrawChromatogram</code>: Plot a chromatogram, color the area under specified peak(s), and calculate the peak area(s).</li>
+<li>
+<code>SpectrumSimilarity</code>: Generate a head-to-tail plot of two mass spectra and calculate a similarity score.</li>
+<li>
+<code>ConvertConcentration</code>: Change the unit basis for a sample concentration, such as ng/g wet weight to ng/g dry weight, or pg/g lipid weight to pg/g wet weight.</li>
+<li>
+<code>RetentionIndex</code>: Calculate the the non-isothermal gas chromatographic retention index of a target compound.</li>
+<li>
+<code>DeadVolume</code>: Calculate the internal volume of a defined length of tubing.</li>
+<li>
+<code>FlowTime</code>: Calculate the time required for a liquid to flow through a defined length of tubing.</li>
+</ul><h3>
+<a name="spectral-libraries" class="anchor" href="#spectral-libraries"><span class="octicon octicon-link"></span></a>Spectral Libraries</h3>
+
+<ul>
+<li>
+<code>LibraryReport</code>: Generate a PDF report of an OrgMassSpecR mass spectral library, or view spectra within R. Each spectral library package has its own LibraryReport function.</li>
+<li>
+<code>ReadMspDirectory</code>: Reads in all .msp files within a directory and makes a single concatenated data frame of m/z values and intensities.</li>
+<li>
+<code>ReadMspFile</code>: Reads in a .msp file and makes a data frame of m/z values and intensities.</li>
+<li>
+<code>WriteMspFile</code>: Writes a single .msp file from a data frame of m/z values and intensities of multiple mass spectra.</li>
+</ul><h3>
+<a name="proteinspeptides" class="anchor" href="#proteinspeptides"><span class="octicon octicon-link"></span></a>Proteins/Peptides</h3>
+
+<ul>
+<li>
+<code>Digest</code>: Cleave an amino acid sequence (a protein or peptide) according to enzyme specific rules and calculate the precursor ion m/z values.</li>
+<li>
+<code>FragmentPeptide</code>: Determine the b- and y-ions or c- and z-ions produced by the fragmentation of a peptide by tandem mass spectrometry.</li>
+<li>
+<code>ConvertPeptide</code>: Convert single amino acid codes to an elemental formula or three letter codes.</li>
+<li>
+<code>PeptideSpectrum</code>: Plot a peptide fragmentation mass spectrum, with the b- and y-ions or c- and z-ions identified.</li>
+<li>
+<code>IsotopicDistributionN</code>: Simulate the isotopic distribution of a peptide with varying amounts of nitrogen-15 incorporation.</li>
+<li>
+<code>IsotopicDistributionHDX</code>: Simulate the isotopic distribution of a peptide undergoing hydrogen-deuterium exchange.</li>
+<li>
+<code>ExchangeableAmides</code>: Determine the number of backbone amide hydrogens given a protein/peptide sequence.  Used in hydrogen-deuterium exchange experiments.</li>
+</ul><h2>
+<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h2>
+
+<h3>
+<a name="introductory-manuscripts" class="anchor" href="#introductory-manuscripts"><span class="octicon octicon-link"></span></a>Introductory Manuscripts</h3>
+
+<p><strong>Mass Spectral Libraries</strong></p>
+
+<p>Hoh E, Dodder NG, Lehotay SJ, Pangallo KC, Reddy CM, Maruya KA, "Nontargeted Comprehensive Two-Dimensional Gas Chromatography/Time-of-Flight Mass Spectrometry Method and Software for Inventorying Persistent and Bioaccumulative Contaminants in Marine Environments", <strong>Environmental Science and Technology</strong>, <strong>2012</strong>, 46, 8001-8008 (DOI: 10.1021/es301139q).</p>
+
+<p><strong>Calculation of MRM Transitions and Isotopic Distributions of Nitrogen-15 Labeled Peptides</strong></p>
+
+<p>Liao WL, Heo GY, Dodder NG, Pikuleva IA, Turko IV, "Optimizing the Conditions of a Multiple Reaction Monitoring Assay for Membrane Proteins: Quantification of Cytochrome P450 11A1 and Adrenodoxin Reductase in Bovine Adrenal Cortex and Retina", <strong>Analytical Chemistry</strong>, <strong>2010</strong>, 82, 5760-5767 (DOI: 10.1021/ac100811x).</p>
+
+<h3>
+<a name="manuscripts-using-orgmassspecr" class="anchor" href="#manuscripts-using-orgmassspecr"><span class="octicon octicon-link"></span></a>Manuscripts Using OrgMassSpecR</h3>
+
+<p>The following link to searches by publisher.</p>
+
+<p><a href="http://pubs.acs.org/action/doSearch?action=search&amp;searchText=OrgMassSpecR&amp;qsSearchArea=searchText">ACS Publications</a></p>
+
+<p><a href="http://www.sciencedirect.com">Elsevier Publications</a> (Search for OrgMassSpecR in All Fields)</p>
+
+<p><a href="http://link.springer.com/search?query=OrgMassSpecR">Springer Publications</a></p>
+
+<p><a href="http://www.jbc.org/search?author1=&amp;fulltext=OrgMassSpecR&amp;pubdate_year=&amp;volume=&amp;firstpage=&amp;submit=yes">The Journal of Biological Chemistry</a></p>
+
+
+        </section>
+
+        <aside id="sidebar">
+
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
