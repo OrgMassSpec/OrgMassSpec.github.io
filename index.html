@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/nathandodder">View on GitHub</a>
 
-          <h1 id="project_title">Mass Spectrometry Data Analysis</h1>
-          <h2 id="project_tagline">R Packages</h2>
+          <h1 id="project_title">Organic/Biological Mass Spectrometry Data Analysis</h1>
+          <h2 id="project_tagline"><a href="index.html">OrgMassSpecR</a> / <a href="libraries.html">Mass Spectral Libraries</a></h2>
 
         </header>
     </div>
@@ -30,13 +30,11 @@
         <h1>
 <a name="orgmassspecr" class="anchor" href="#orgmassspecr"><span class="octicon octicon-link"></span></a>OrgMassSpecR</h1>
 
-<p>OrgMassSpecR is an extension for the <a href="http://www.r-project.org/">R</a> statistical computing language. It contains functions to assist with organic/biological mass spectrometry data analysis.</p>
+<p>OrgMassSpecR is an extension for the <a href="http://www.r-project.org/">R</a> statistical computing language. It contains functions to assist with organic/biological mass spectrometry data analysis. <a href="libraries.html">Mass spectral libraries</a> are available as companion packages.
 
-<p><strong><a href="libraries.html">Mass spectral libraries</a></strong> are available as companion packages through <a href="https://github.com/nathandodder">GitHub repositories</a>.
+<p>This project is under continuous development. The stable version of OrgMassSpecR is on <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/index.html">CRAN</a>. The development version of OrgMassSpecR and the mass spectral libraries are on <a href="https://github.com/nathandodder">GitHub</a>.</p>
 
-<p>This project is under continuous development. The stable version of OrgMassSpecR is on <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/index.html">CRAN</a>. The development version of OrgMassSpecR and the mass spectral libraries are on <a href="https://github.com/nathandodder/OrgMassSpecR">GitHub</a>.</p>
-
-<p>Examples are in the package vignette <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/vignettes/OrgMassSpecR-examples.pdf">(PDF)</a>.</p>
+<p>OrgMassSpecR examples are in the package vignette <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/vignettes/OrgMassSpecR-examples.pdf">(PDF)</a>.</p>
 
 <h2>
 <a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
@@ -46,55 +44,55 @@
 
 <ul>
 <li>
-<code>MolecularWeight</code>: Calculate the molecular weight of an organic molecule.</li>
+<strong>MolecularWeight</strong>: Calculate the molecular weight of an organic molecule.</li>
 <li>
-<code>MonoisotopicMass</code>: Calculate the monoisotopic mass or monoisotopic m/z value of an organic molecule.</li>
+<strong>MonoisotopicMass</strong>: Calculate the monoisotopic mass or monoisotopic m/z value of an organic molecule.</li>
 <li>
-<code>IsotopicDistribution</code>: Simulate the isotopic distribution of an organic molecule.</li>
+<strong>IsotopicDistribution</strong>: Simulate the isotopic distribution of an organic molecule.</li>
 <li>
-<code>ListFormula</code>: Convert a character string representing an elemental formula to a list representing the elemental formula.</li>
+<strong>ListFormula</strong>: Convert a character string representing an elemental formula to a list representing the elemental formula.</li>
 <li>
-<code>DrawChromatogram</code>: Plot a chromatogram, color the area under specified peak(s), and calculate the peak area(s).</li>
+<strong>DrawChromatogram</strong>: Plot a chromatogram, color the area under specified peak(s), and calculate the peak area(s).</li>
 <li>
-<code>SpectrumSimilarity</code>: Generate a head-to-tail plot of two mass spectra and calculate a similarity score.</li>
+<strong>SpectrumSimilarity</strong>: Generate a head-to-tail plot of two mass spectra and calculate a similarity score.</li>
 <li>
-<code>ConvertConcentration</code>: Change the unit basis for a sample concentration, such as ng/g wet weight to ng/g dry weight, or pg/g lipid weight to pg/g wet weight.</li>
+<strong>ConvertConcentration</strong>: Change the unit basis for a sample concentration, such as ng/g wet weight to ng/g dry weight, or pg/g lipid weight to pg/g wet weight.</li>
 <li>
-<code>RetentionIndex</code>: Calculate the the non-isothermal gas chromatographic retention index of a target compound.</li>
+<strong>RetentionIndex</strong>: Calculate the the non-isothermal gas chromatographic retention index of a target compound.</li>
 <li>
-<code>DeadVolume</code>: Calculate the internal volume of a defined length of tubing.</li>
+<strong>DeadVolume</strong>: Calculate the internal volume of a defined length of tubing.</li>
 <li>
-<code>FlowTime</code>: Calculate the time required for a liquid to flow through a defined length of tubing.</li>
+<strong>FlowTime</strong>: Calculate the time required for a liquid to flow through a defined length of tubing.</li>
 </ul><h3>
 <a name="spectral-libraries" class="anchor" href="#spectral-libraries"><span class="octicon octicon-link"></span></a>Spectral Libraries</h3>
 
 <ul>
 <li>
-<code>LibraryReport</code>: Generate a PDF report of an OrgMassSpecR mass spectral library, or view spectra within R. Each spectral library package has its own LibraryReport function.</li>
+<strong>LibraryReport</strong>: Generate a PDF report of an OrgMassSpecR mass spectral library, or view spectra within R. Each spectral library package has its own LibraryReport function.</li>
 <li>
-<code>ReadMspDirectory</code>: Reads in all .msp files within a directory and makes a single concatenated data frame of m/z values and intensities.</li>
+<strong>ReadMspDirectory</strong>: Reads in all .msp files within a directory and makes a single concatenated data frame of m/z values and intensities.</li>
 <li>
-<code>ReadMspFile</code>: Reads in a .msp file and makes a data frame of m/z values and intensities.</li>
+<strong>ReadMspFile</strong>: Reads in a .msp file and makes a data frame of m/z values and intensities.</li>
 <li>
-<code>WriteMspFile</code>: Writes a single .msp file from a data frame of m/z values and intensities of multiple mass spectra.</li>
+<strong>WriteMspFile</strong>: Writes a single .msp file from a data frame of m/z values and intensities of multiple mass spectra.</li>
 </ul><h3>
 <a name="proteinspeptides" class="anchor" href="#proteinspeptides"><span class="octicon octicon-link"></span></a>Proteins/Peptides</h3>
 
 <ul>
 <li>
-<code>Digest</code>: Cleave an amino acid sequence (a protein or peptide) according to enzyme specific rules and calculate the precursor ion m/z values.</li>
+<strong>Digest</strong>: Cleave an amino acid sequence (a protein or peptide) according to enzyme specific rules and calculate the precursor ion m/z values.</li>
 <li>
-<code>FragmentPeptide</code>: Determine the b- and y-ions or c- and z-ions produced by the fragmentation of a peptide by tandem mass spectrometry.</li>
+<strong>FragmentPeptide</strong>: Determine the b- and y-ions or c- and z-ions produced by the fragmentation of a peptide by tandem mass spectrometry.</li>
 <li>
-<code>ConvertPeptide</code>: Convert single amino acid codes to an elemental formula or three letter codes.</li>
+<strong>ConvertPeptide</strong>: Convert single amino acid codes to an elemental formula or three letter codes.</li>
 <li>
-<code>PeptideSpectrum</code>: Plot a peptide fragmentation mass spectrum, with the b- and y-ions or c- and z-ions identified.</li>
+<strong>PeptideSpectrum</strong>: Plot a peptide fragmentation mass spectrum, with the b- and y-ions or c- and z-ions identified.</li>
 <li>
-<code>IsotopicDistributionN</code>: Simulate the isotopic distribution of a peptide with varying amounts of nitrogen-15 incorporation.</li>
+<strong>IsotopicDistributionN</strong>: Simulate the isotopic distribution of a peptide with varying amounts of nitrogen-15 incorporation.</li>
 <li>
-<code>IsotopicDistributionHDX</code>: Simulate the isotopic distribution of a peptide undergoing hydrogen-deuterium exchange.</li>
+<strong>IsotopicDistributionHDX</strong>: Simulate the isotopic distribution of a peptide undergoing hydrogen-deuterium exchange.</li>
 <li>
-<code>ExchangeableAmides</code>: Determine the number of backbone amide hydrogens given a protein/peptide sequence.  Used in hydrogen-deuterium exchange experiments.</li>
+<strong>ExchangeableAmides</strong>: Determine the number of backbone amide hydrogens given a protein/peptide sequence.  Used in hydrogen-deuterium exchange experiments.</li>
 </ul><h2>
 <a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h2>
 
@@ -139,7 +137,7 @@
 
 <p>The code used to simulate the bromine + chlorine combinations is below.  A wrapper function is used to set up the number of halogens.  The x-axis is manually scaled to allow easier comparison of the distributions.
 <hr>
-<code>
+<strong>
 <pre>
 library(OrgMassSpecR)
 library(lattice)
@@ -179,18 +177,22 @@ xyplot(percent ~ mz | distribution.label,
   lwd = 2
 )
 </pre>
-</code>
+</strong>
 
 -->
 
 <h3>Example Graphics</h3>
-<p>Simulated isotopic distributions of peptide NECFLQHK with varying nitrogen-15 incorporation.  Function <code class="source">IsotopicDistributionN</code>.</p>
+
+<p>Simulated isotopic distributions of peptide NECFLQHK with varying nitrogen-15 incorporation. Function <strong>IsotopicDistributionN</strong>.</p>
 <img src="dist.png" alt="simulated isotopic distribution">
-<p>Highlighted peaks.  Function <code class="source">DrawChromatogram</code>.</p>
+
+<p>Highlighted peaks. Function <strong>DrawChromatogram</strong>.</p>
 <img src="chrom.png" alt="chromatogram">
-<p>Peptide fragmentation mass spectrum.  Function <code class="source">PeptideSpectrum</code>.</p>
+
+<p>Peptide fragmentation mass spectrum. Function <strong>PeptideSpectrum</strong>.</p>
 <img src="spec.png" alt="fragmentation mass spectrum">
-<p>GC/MS spectrum similarity.  Function <code class="source">SpectrumSimilarity</code>.</p>
+
+<p>GC/MS spectrum similarity. Function <strong>SpectrumSimilarity</strong>.</p>
 <img src="similarity.png" alt="head-to-tail plot">
 
 
