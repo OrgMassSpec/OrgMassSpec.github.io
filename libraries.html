@@ -30,38 +30,16 @@
         <h1>
 <a name="mass-spectral-libraries" class="anchor" href="#mass-spectral-libraries"><span class="octicon octicon-link"></span></a>Mass Spectral Libraries</h1>
 
-<p>Mass spectral libraries are provided as companion packages to
-<a href = index.html>OrgMassSpecR</a>. The library content is currently focused on electron
-impact (EI) spectra of anthropogenic environmental contaminants and
-halogenated natural products. The libraries are intended to document
-and organize the evidence for compound identifications, and thus have
-a somewhat different focus than standard reference databases such as
-the <a href="http://www.nist.gov/srd/nist1a.cfm">NIST/EPA/NIH
-library</a>. For example, the OrgMassSpecR libraries store fragment
-ion identifications obtained by the manual interpretation of mass
-spectra and allow organization based on compound class and other
-parameters. The libraries may also contain interesting but
-unidentified mass spectra.
+<p>Mass spectral libraries are provided as companion packages to <a href = index.html>OrgMassSpecR</a>. The library content is currently focused on electron impact (EI) spectra of anthropogenic environmental contaminants and halogenated natural products. The libraries are intended to document and organize the evidence for compound identifications. For example, to store fragment
+ion identifications obtained by the manual interpretation of mass spectra and organization based on compound class and other
+parameters related to the requirements of the project. The libraries may also contain interesting but unidentified mass spectra.</p>
 
-<p>Each library package generates a PDF report containing the
-annotated spectra, and a single text file containing all spectra in
-NIST MSP format. The PDF report allows the spectra and identification
-evidence to be viewed without specialized software. The MSP file can
-be used to import the spectra into other software, for example to
-create a custom searchable library in the NIST MS Search program. The
-PDF reports and MSP files are available below. MD5 checksums are given to verify the file integrity. 
+<p>Each library is provided as a PDF report containing the annotated spectra, a single text file containing all spectra in NIST MSP format, and an R package. The PDF report allows the spectra to be viewed without specialized software. The MSP file can be used to import spectra into other software. The R package generates the PDF report and text file. Within the package, mass spectra (m/z values and intensities) and metadata (compound names, retention times, compound classes, etc.) are stored in CSV format. Packages may also contain functions to generate summary tables and plots.</p>
 
-<p>Within the R packages, the mass spectra (m/z values, intensities,
-and fragment ion identifications) and metatdata (compound names,
-retention times, compound classes, etc.) are stored in CSV format for
-working with the data in R or exporting it to other software. The
-packages may contain functions to generate summary tables and plots. The mass spectral library packages depend on <a href = index.html>OrgMassSpecR</a> and <a href = http://cran.r-project.org/web/packages/png/index.html>png</a>.</p>
+<p>Library files are available below. MD5 checksums are provided to verify the file integrity.</p>
 
 <h3>California Sea Lion Contaminant Library (Example)</h3>
-<p>This library is provided as proof-of-concept.  It contains a
-vignette <a href="OrgMassSpecR-libraries.html">(PDF)</a> describing the
-general file structure and functionality of spectral library
-packages.</p>
+<p>This library was originally provided as proof-of-concept.</p>
 
 <table>
 <tr><td valign=top> <b><font color = "darkgreen">PDF Report:</font></b> </td> <td> <a href ="SpecLibExample.pdf">SpecLibExample.pdf</a> <br>MD5 checksum: abc13b9008f079e251e5daf582214fed</td></tr>
