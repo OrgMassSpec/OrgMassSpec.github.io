@@ -1,149 +1,199 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="OrgMassSpec.github.io : Mass Spectrometry Data Analysis" />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="OrgMassSpec.github.io : Mass Spectrometry Data Analysis" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>OrgMassSpec.github.io</title>
-  </head>
+  <title>OrgMassSpec.github.io</title>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/OrgMassSpec">View on GitHub</a>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <a id="forkme_banner" href="https://github.com/OrgMassSpec">View on GitHub</a>
 
-          <h1 id="project_title">Organic/Biological Mass Spectrometry Data Analysis</h1>
-          <h2 id="project_tagline"><a href="index.html">OrgMassSpecR</a> / <a href="libraries.html">Mass Spectral Libraries</a></h2>
+      <h1 id="project_title">Organic/Biological Mass Spectrometry Data Analysis</h1>
+      <h2 id="project_tagline"><a href="index.html">OrgMassSpecR</a> / <a href="libraries.html">Mass Spectral Libraries</a></h2>
 
-        </header>
-    </div>
+    </header>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="orgmassspecr" class="anchor" href="#orgmassspecr"><span class="octicon octicon-link"></span></a>OrgMassSpecR</h1>
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h1>
+        <a name="orgmassspecr" class="anchor" href="#orgmassspecr"><span class="octicon octicon-link"></span></a>OrgMassSpecR</h1>
 
-<p>OrgMassSpecR is an extension for the <a href="http://www.r-project.org/">R</a> statistical computing language. It contains functions to assist with organic/biological mass spectrometry data analysis. Mass spectral libraries are available as companion packages.
+      <p>OrgMassSpecR is an extension for the <a href="http://www.r-project.org/">R</a> statistical computing language. It contains
+        functions to assist with organic/biological mass spectrometry data analysis. Mass spectral libraries are available
+        as companion packages.
 
-<p>This project is under continuous development. The stable version of OrgMassSpecR is on <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/index.html">CRAN</a>. The development version of OrgMassSpecR is on <a href="http://r-forge.r-project.org/R/?group_id=417">R-Forge</a>. The mass spectral library packages and stand-alone files (PDF reports and MSP files) are available on the GitHub <a href="libraries.html">Mass Spectral Libraries</a> page.</p>
-
-
-<p>OrgMassSpecR examples are in the <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/vignettes/OrgMassSpecR-examples.html">package vignette</a>.</p>
-
-<h2>
-<a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
-
-<h3>
-<a name="general" class="anchor" href="#general"><span class="octicon octicon-link"></span></a>General</h3>
-
-<ul>
-<p>
-<strong>MolecularWeight</strong>: Calculate the molecular weight of an organic molecule.</p>
-<p>
-<strong>MonoisotopicMass</strong>: Calculate the monoisotopic mass or monoisotopic m/z value of an organic molecule.</p>
-<p>
-<strong>IsotopicDistribution</strong>: Simulate the isotopic distribution of an organic molecule.</p>
-<p>
-<strong>ListFormula</strong>: Convert a character string representing an elemental formula to a list representing the elemental formula.</p>
-<p>
-<strong>DrawChromatogram</strong>: Plot a chromatogram, color the area under specified peak(s), and calculate the peak area(s).</p>
-<p>
-<strong>SpectrumSimilarity</strong>: Generate a head-to-tail plot of two mass spectra and calculate a similarity score.</p>
-<p>
-<strong>ConvertConcentration</strong>: Change the unit basis for a sample concentration, such as ng/g wet weight to ng/g dry weight, or pg/g lipid weight to pg/g wet weight.</p>
-<p>
-<strong>RetentionIndex</strong>: Calculate the the non-isothermal gas chromatographic retention index of a target compound.</p>
-<p>
-<strong>DeadVolume</strong>: Calculate the internal volume of a defined length of tubing.</p>
-<p>
-<strong>FlowTime</strong>: Calculate the time required for a liquid to flow through a defined length of tubing.</p>
-</ul><h3>
-<a name="spectral-libraries" class="anchor" href="#spectral-libraries"><span class="octicon octicon-link"></span></a>Spectral Libraries</h3>
-
-<ul>
-<p>
-<strong>LibraryReport</strong>: Generate a PDF report of an OrgMassSpecR mass spectral library, or view spectra within R. Each spectral library package has its own LibraryReport function.</p>
-<p>
-<strong>ReadMspDirectory</strong>: Reads in all .msp files within a directory and makes a single concatenated data frame of m/z values and intensities.</p>
-<p>
-<strong>ReadMspFile</strong>: Reads in a .msp file and makes a data frame of m/z values and intensities.</p>
-<p>
-<strong>WriteMspFile</strong>: Writes a single .msp file from a data frame of m/z values and intensities of multiple mass spectra.</p>
-</ul><h3>
-<a name="proteinspeptides" class="anchor" href="#proteinspeptides"><span class="octicon octicon-link"></span></a>Proteins/Peptides</h3>
+        <p>This project is under continuous development. The stable version of OrgMassSpecR is on <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/index.html">CRAN</a>.
+          The development version of OrgMassSpecR is on <a href="https://github.com/OrgMassSpec/OrgMassSpecR">GitHub</a>.
+          The mass spectral library packages and stand-alone files (PDF reports and MSP files) are available on the GitHub
+          <a href="libraries.html">Mass Spectral Libraries</a> page.</p>
 
 
-<p>
-<strong>Digest</strong>: Cleave an amino acid sequence (a protein or peptide) according to enzyme specific rules and calculate the precursor ion m/z values.</p>
-<p>
-<strong>FragmentPeptide</strong>: Determine the b- and y-ions or c- and z-ions produced by the fragmentation of a peptide by tandem mass spectrometry.</p>
-<p>
-<strong>ConvertPeptide</strong>: Convert single amino acid codes to an elemental formula or three letter codes.</p>
-<p>
-<strong>PeptideSpectrum</strong>: Plot a peptide fragmentation mass spectrum, with the b- and y-ions or c- and z-ions identified.</p>
-<p>
-<strong>IsotopicDistributionN</strong>: Simulate the isotopic distribution of a peptide with varying amounts of nitrogen-15 incorporation.</p>
-<p>
-<strong>IsotopicDistributionHDX</strong>: Simulate the isotopic distribution of a peptide undergoing hydrogen-deuterium exchange.</p>
-<p>
-<strong>ExchangeableAmides</strong>: Determine the number of backbone amide hydrogens given a protein/peptide sequence.  Used in hydrogen-deuterium exchange experiments.</p>
+        <p>OrgMassSpecR examples are in the <a href="http://cran.r-project.org/web/packages/OrgMassSpecR/vignettes/OrgMassSpecR-examples.html">package vignette</a>.</p>
 
-<h2>
-<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h2>
+        <h2>
+          <a name="functions" class="anchor" href="#functions"><span class="octicon octicon-link"></span></a>Functions</h2>
 
-<h3>
-<a name="introductory-manuscripts" class="anchor" href="#introductory-manuscripts"><span class="octicon octicon-link"></span></a>Introductory Manuscripts</h3>
+        <h3>
+          <a name="general" class="anchor" href="#general"><span class="octicon octicon-link"></span></a>General</h3>
 
-<p><strong>Mass Spectral Libraries</strong></p>
+        <ul>
+          <p>
+            <strong>MolecularWeight</strong>: Calculate the molecular weight of an organic molecule.</p>
+          <p>
+            <strong>MonoisotopicMass</strong>: Calculate the monoisotopic mass or monoisotopic m/z value of an organic molecule.</p>
+          <p>
+            <strong>IsotopicDistribution</strong>: Simulate the isotopic distribution of an organic molecule.</p>
+          <p>
+            <strong>ListFormula</strong>: Convert a character string representing an elemental formula to a list representing
+            the elemental formula.</p>
+          <p>
+            <strong>DrawChromatogram</strong>: Plot a chromatogram, color the area under specified peak(s), and calculate
+            the peak area(s).</p>
+          <p>
+            <strong>SpectrumSimilarity</strong>: Generate a head-to-tail plot of two mass spectra and calculate a similarity
+            score.</p>
+          <p>
+            <strong>ConvertConcentration</strong>: Change the unit basis for a sample concentration, such as ng/g wet weight
+            to ng/g dry weight, or pg/g lipid weight to pg/g wet weight.</p>
+          <p>
+            <strong>RetentionIndex</strong>: Calculate the the non-isothermal gas chromatographic retention index of a target
+            compound.</p>
+          <p>
+            <strong>DeadVolume</strong>: Calculate the internal volume of a defined length of tubing.</p>
+          <p>
+            <strong>FlowTime</strong>: Calculate the time required for a liquid to flow through a defined length of tubing.</p>
+        </ul>
+        <h3>
+          <a name="spectral-libraries" class="anchor" href="#spectral-libraries"><span class="octicon octicon-link"></span></a>Spectral
+          Libraries</h3>
 
-<p>Hoh E, Dodder NG, Lehotay SJ, Pangallo KC, Reddy CM, Maruya KA. Nontargeted Comprehensive Two-Dimensional Gas Chromatography/Time-of-Flight Mass Spectrometry Method and Software for Inventorying Persistent and Bioaccumulative Contaminants in Marine Environments. Environ Sci Technol. 2012;46: 8001-8008. <a href=http://dx.doi.org/10.1021/es301139q>[Link]</a></p>
-
-<p><strong>Calculation of MRM Transitions and Isotopic Distributions of Nitrogen-15 Labeled Peptides</strong></p>
-
-<p>Liao W-L, Heo G-Y, Dodder NG, Pikuleva IA, Turko IV. Optimizing the Conditions of a Multiple Reaction Monitoring Assay for Membrane Proteins: Quantification of Cytochrome P450 11A1 and Adrenodoxin Reductase in Bovine Adrenal Cortex and Retina. Anal Chem. 2010;82: 5760-5767. <a href=http://dx.doi.org/10.1021/ac100811x>[Link]</a></p>
-
-<h3>
-<a name="manuscripts-using-orgmassspecr" class="anchor" href="#manuscripts-using-orgmassspecr"><span class="octicon octicon-link"></span></a>Manuscripts Using or Referring to OrgMassSpecR</h3>
-
-<p>Gago-Ferrero P, Schymanski EL, Bletsou AA, Aalizadeh R, Hollender J, Thomaidis NS. Extended Suspect and Non-Target Strategies to Characterize Emerging Polar Organic Contaminants in Raw Wastewater with LC-HRMS/MS. Environ Sci Technol. 2015;49: 12333-12341. <a href=http://dx.doi.org/10.1021%2Facs.est.5b03454>[Link]</a></p>
-
-<p>ElBashir R, Vanselow JT, Kraus A, Janzen CJ, Siegel TN, Schlosser A. Fragment Ion Patchwork Quantification for Measuring Site-Specific Acetylation Degrees. Anal Chem. 2015;87: 9939-9945. <a href=http://dx.doi.org/10.1021/acs.analchem.5b02517>[Link]</a></p>
-
-<p>Shaul NJ, Dodder NG, Aluwihare LI, Mackintosh SA, Maruya KA, Chivers SJ, et al. Nontargeted Biomonitoring of Halogenated Organic Compounds in Two Ecotypes of Bottlenose Dolphins (Tursiops truncatus) from the Southern California Bight. Environ Sci Technol. 2015;49: 1328-1338. <a href=http://dx.doi.org/10.1021/es505156q>[Link]</a></p>
-
-<p>Schollee JE, Schymanski EL, Avak SE, Loos M, Hollender J. Prioritizing Unknown Transformation Products from Biologically-Treated Wastewater Using High-Resolution Mass Spectrometry, Multivariate Statistics, and Metabolic Logic. Anal Chem. 2015;87: 12121-12129. <a href=http://dx.doi.org/10.1021/acs.analchem.5b02905>[Link]</a></p>
-
-<p>Gatto L, Christoforou A. Using R and Bioconductor for proteomics data analysis. Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics. 2014;1844: 42-51. <a href=http://dx.doi.org/10.1016/j.bbapap.2013.04.032>[Link]</a></p>
-
-<p>Campbell MP, Nguyen-Khuong T, Hayes CA, Flowers SA, Alagesan K, Kolarich D, et al. Validation of the curation pipeline of UniCarb-DB: Building a global glycan reference MS/MS repository. Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics. 2014;1844: 108-116. <a href=http://dx.doi.org/10.1016/j.bbapap.2013.04.018>[Link]</a></p>
-
-<p>Dittwald P, Vu TN, Harris GA, Caprioli RM, Van de Plas R, Laukens K, et al. Towards automated discrimination of lipids versus peptides from full scan mass spectra. EuPA Open Proteomics. 2014;4: 87-100. <a href=http://dx.doi.org/10.1016/j.euprot.2014.05.002>[Link]</a></p>
-
-<p>Zushi Y, Hashimoto S, Fushimi A, Takazawa Y, Tanabe K, Shibata Y. Rapid automatic identification and quantification of compounds in complex matrices using comprehensive two-dimensional gas chromatography coupled to high resolution time-of-flight mass spectrometry with a peak sentinel tool. Analytica Chimica Acta. 2013;778: 54-62. <a href=http://dx.doi.org/10.1016/j.aca.2013.03.049>[Link]</a></p>
-
-<p>Broeckling CD, Heuberger AL, Prince JA, Ingelsson E, Prenni JE. Assigning precursor-product ion relationships in indiscriminant MS/MS data from non-targeted metabolite profiling studies. Metabolomics. 2013;9: 33-43. <a href=http://dx.doi.org/10.1007/s11306-012-0426-4>[Link]</a></p>
-
-<p>Tang Z, Wu M, Li Y, Zheng X, Liu H, Cheng X, et al. Absolute quantification of NAD(P)H:quinone oxidoreductase 1 in human tumor cell lines and tissues by liquid chromatography-mass spectrometry/mass spectrometry using both isotopic and non-isotopic internal standards. Analytica Chimica Acta. 2013;772: 59-67. <a href=http://dx.doi.org/10.1016/j.aca.2013.02.013>[Link]</a></p>
-
-<p>Wang M, Chen J, Turko IV. 15N-Labeled Full-Length Apolipoprotein E4 as an Internal Standard for Mass Spectrometry Quantification of Apolipoprotein E Isoforms. Anal Chem. 2012;84: 8340-8344. <a href=http://dx.doi.org/10.1021/ac3018873>[Link]</a></p>
-
-<p>Wang M, Heo G-Y, Omarova S, Pikuleva IA, Turko IV. Sample Prefractionation for Mass Spectrometry Quantification of Low-Abundance Membrane Proteins. Anal Chem. 2012;84: 5186-5191. <a href=http://dx.doi.org/10.1021/ac300587v>[Link]</a></p>
-
-<p>Lowenthal MS, Gasca-Aragon H, Schiel JE, Dodder NG, Bunk DM. A quantitative LC-MS/MS method for comparative analysis of capture-antibody affinity toward protein antigens. Journal of Chromatography B. 2011;879: 2726-2732. <a href=http://dx.doi.org/10.1016/j.jchromb.2011.07.037>[Link]</a></p>
-
-<p>Charvet C, Liao W-L, Heo G-Y, Laird J, Salomon RG, Turko IV, et al. Isolevuglandins and Mitochondrial Enzymes in the Retina. J Biol Chem. 2011;286: 20413-20422. <a href=http://dx.doi.org/10.1074/jbc.M111.232546>[Link]</a></p>
-
-<p>Liao W-L, Heo G-Y, Dodder NG, Reem RE, Mast N, Huang S, et al. Quantification of Cholesterol-Metabolizing P450s CYP27A1 and CYP46A1 in Neural Tissues Reveals a Lack of Enzyme-Product Correlations in Human Retina but Not Human Brain. J Proteome Res. 2010;10: 241-248. <a href=http://dx.doi.org/10.1021/pr1008898>[Link]</a></p>
+        <ul>
+          <p>
+            <strong>LibraryReport</strong>: Generate a PDF report of an OrgMassSpecR mass spectral library, or view spectra
+            within R. Each spectral library package has its own LibraryReport function.</p>
+          <p>
+            <strong>ReadMspDirectory</strong>: Reads in all .msp files within a directory and makes a single concatenated
+            data frame of m/z values and intensities.</p>
+          <p>
+            <strong>ReadMspFile</strong>: Reads in a .msp file and makes a data frame of m/z values and intensities.</p>
+          <p>
+            <strong>WriteMspFile</strong>: Writes a single .msp file from a data frame of m/z values and intensities of multiple
+            mass spectra.</p>
+        </ul>
+        <h3>
+          <a name="proteinspeptides" class="anchor" href="#proteinspeptides"><span class="octicon octicon-link"></span></a>Proteins/Peptides</h3>
 
 
-<!--
+        <p>
+          <strong>Digest</strong>: Cleave an amino acid sequence (a protein or peptide) according to enzyme specific rules
+          and calculate the precursor ion m/z values.</p>
+        <p>
+          <strong>FragmentPeptide</strong>: Determine the b- and y-ions or c- and z-ions produced by the fragmentation of
+          a peptide by tandem mass spectrometry.</p>
+        <p>
+          <strong>ConvertPeptide</strong>: Convert single amino acid codes to an elemental formula or three letter codes.</p>
+        <p>
+          <strong>PeptideSpectrum</strong>: Plot a peptide fragmentation mass spectrum, with the b- and y-ions or c- and
+          z-ions identified.</p>
+        <p>
+          <strong>IsotopicDistributionN</strong>: Simulate the isotopic distribution of a peptide with varying amounts of
+          nitrogen-15 incorporation.</p>
+        <p>
+          <strong>IsotopicDistributionHDX</strong>: Simulate the isotopic distribution of a peptide undergoing hydrogen-deuterium
+          exchange.</p>
+        <p>
+          <strong>ExchangeableAmides</strong>: Determine the number of backbone amide hydrogens given a protein/peptide sequence.
+          Used in hydrogen-deuterium exchange experiments.</p>
+
+        <h2>
+          <a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h2>
+
+        <h3>
+          <a name="introductory-manuscripts" class="anchor" href="#introductory-manuscripts"><span class="octicon octicon-link"></span></a>Introductory
+          Manuscripts</h3>
+
+        <p><strong>Mass Spectral Libraries</strong></p>
+
+        <p>Hoh E, Dodder NG, Lehotay SJ, Pangallo KC, Reddy CM, Maruya KA. Nontargeted Comprehensive Two-Dimensional Gas Chromatography/Time-of-Flight
+          Mass Spectrometry Method and Software for Inventorying Persistent and Bioaccumulative Contaminants in Marine Environments.
+          Environ Sci Technol. 2012;46: 8001-8008. <a href=http://dx.doi.org/10.1021/es301139q>[Link]</a></p>
+
+        <p><strong>Calculation of MRM Transitions and Isotopic Distributions of Nitrogen-15 Labeled Peptides</strong></p>
+
+        <p>Liao W-L, Heo G-Y, Dodder NG, Pikuleva IA, Turko IV. Optimizing the Conditions of a Multiple Reaction Monitoring
+          Assay for Membrane Proteins: Quantification of Cytochrome P450 11A1 and Adrenodoxin Reductase in Bovine Adrenal
+          Cortex and Retina. Anal Chem. 2010;82: 5760-5767. <a href=http://dx.doi.org/10.1021/ac100811x>[Link]</a></p>
+
+        <h3>
+          <a name="manuscripts-using-orgmassspecr" class="anchor" href="#manuscripts-using-orgmassspecr"><span class="octicon octicon-link"></span></a>Manuscripts
+          Using or Referring to OrgMassSpecR</h3>
+
+        <p>Gago-Ferrero P, Schymanski EL, Bletsou AA, Aalizadeh R, Hollender J, Thomaidis NS. Extended Suspect and Non-Target
+          Strategies to Characterize Emerging Polar Organic Contaminants in Raw Wastewater with LC-HRMS/MS. Environ Sci Technol.
+          2015;49: 12333-12341. <a href=http://dx.doi.org/10.1021%2Facs.est.5b03454>[Link]</a></p>
+
+        <p>ElBashir R, Vanselow JT, Kraus A, Janzen CJ, Siegel TN, Schlosser A. Fragment Ion Patchwork Quantification for Measuring
+          Site-Specific Acetylation Degrees. Anal Chem. 2015;87: 9939-9945. <a href=http://dx.doi.org/10.1021/acs.analchem.5b02517>[Link]</a></p>
+
+        <p>Shaul NJ, Dodder NG, Aluwihare LI, Mackintosh SA, Maruya KA, Chivers SJ, et al. Nontargeted Biomonitoring of Halogenated
+          Organic Compounds in Two Ecotypes of Bottlenose Dolphins (Tursiops truncatus) from the Southern California Bight.
+          Environ Sci Technol. 2015;49: 1328-1338. <a href=http://dx.doi.org/10.1021/es505156q>[Link]</a></p>
+
+        <p>Schollee JE, Schymanski EL, Avak SE, Loos M, Hollender J. Prioritizing Unknown Transformation Products from Biologically-Treated
+          Wastewater Using High-Resolution Mass Spectrometry, Multivariate Statistics, and Metabolic Logic. Anal Chem. 2015;87:
+          12121-12129. <a href=http://dx.doi.org/10.1021/acs.analchem.5b02905>[Link]</a></p>
+
+        <p>Gatto L, Christoforou A. Using R and Bioconductor for proteomics data analysis. Biochimica et Biophysica Acta (BBA)
+          - Proteins and Proteomics. 2014;1844: 42-51. <a href=http://dx.doi.org/10.1016/j.bbapap.2013.04.032>[Link]</a></p>
+
+        <p>Campbell MP, Nguyen-Khuong T, Hayes CA, Flowers SA, Alagesan K, Kolarich D, et al. Validation of the curation pipeline
+          of UniCarb-DB: Building a global glycan reference MS/MS repository. Biochimica et Biophysica Acta (BBA) - Proteins
+          and Proteomics. 2014;1844: 108-116. <a href=http://dx.doi.org/10.1016/j.bbapap.2013.04.018>[Link]</a></p>
+
+        <p>Dittwald P, Vu TN, Harris GA, Caprioli RM, Van de Plas R, Laukens K, et al. Towards automated discrimination of lipids
+          versus peptides from full scan mass spectra. EuPA Open Proteomics. 2014;4: 87-100. <a href=http://dx.doi.org/10.1016/j.euprot.2014.05.002>[Link]</a></p>
+
+        <p>Zushi Y, Hashimoto S, Fushimi A, Takazawa Y, Tanabe K, Shibata Y. Rapid automatic identification and quantification
+          of compounds in complex matrices using comprehensive two-dimensional gas chromatography coupled to high resolution
+          time-of-flight mass spectrometry with a peak sentinel tool. Analytica Chimica Acta. 2013;778: 54-62. <a href=http://dx.doi.org/10.1016/j.aca.2013.03.049>[Link]</a></p>
+
+        <p>Broeckling CD, Heuberger AL, Prince JA, Ingelsson E, Prenni JE. Assigning precursor-product ion relationships in
+          indiscriminant MS/MS data from non-targeted metabolite profiling studies. Metabolomics. 2013;9: 33-43. <a href=http://dx.doi.org/10.1007/s11306-012-0426-4>[Link]</a></p>
+
+        <p>Tang Z, Wu M, Li Y, Zheng X, Liu H, Cheng X, et al. Absolute quantification of NAD(P)H:quinone oxidoreductase 1 in
+          human tumor cell lines and tissues by liquid chromatography-mass spectrometry/mass spectrometry using both isotopic
+          and non-isotopic internal standards. Analytica Chimica Acta. 2013;772: 59-67. <a href=http://dx.doi.org/10.1016/j.aca.2013.02.013>[Link]</a></p>
+
+        <p>Wang M, Chen J, Turko IV. 15N-Labeled Full-Length Apolipoprotein E4 as an Internal Standard for Mass Spectrometry
+          Quantification of Apolipoprotein E Isoforms. Anal Chem. 2012;84: 8340-8344. <a href=http://dx.doi.org/10.1021/ac3018873>[Link]</a></p>
+
+        <p>Wang M, Heo G-Y, Omarova S, Pikuleva IA, Turko IV. Sample Prefractionation for Mass Spectrometry Quantification of
+          Low-Abundance Membrane Proteins. Anal Chem. 2012;84: 5186-5191. <a href=http://dx.doi.org/10.1021/ac300587v>[Link]</a></p>
+
+        <p>Lowenthal MS, Gasca-Aragon H, Schiel JE, Dodder NG, Bunk DM. A quantitative LC-MS/MS method for comparative analysis
+          of capture-antibody affinity toward protein antigens. Journal of Chromatography B. 2011;879: 2726-2732. <a href=http://dx.doi.org/10.1016/j.jchromb.2011.07.037>[Link]</a></p>
+
+        <p>Charvet C, Liao W-L, Heo G-Y, Laird J, Salomon RG, Turko IV, et al. Isolevuglandins and Mitochondrial Enzymes in
+          the Retina. J Biol Chem. 2011;286: 20413-20422. <a href=http://dx.doi.org/10.1074/jbc.M111.232546>[Link]</a></p>
+
+        <p>Liao W-L, Heo G-Y, Dodder NG, Reem RE, Mast N, Huang S, et al. Quantification of Cholesterol-Metabolizing P450s CYP27A1
+          and CYP46A1 in Neural Tissues Reveals a Lack of Enzyme-Product Correlations in Human Retina but Not Human Brain.
+          J Proteome Res. 2010;10: 241-248. <a href=http://dx.doi.org/10.1021/pr1008898>[Link]</a></p>
+
+
+        <!--
 
 <p>The following link to searches by publisher.</p>
 
@@ -157,18 +207,18 @@
 
 -->
 
-<h2>
-<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+        <h2>
+          <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
 
-<h3>Halogenated Isotopic Distributions</h3>
+        <h3>Halogenated Isotopic Distributions</h3>
 
-<p>The characteristic isotopic distributions of bromine and chlorine atoms can aid the interpretation of mass spectra. 
+        <p>The characteristic isotopic distributions of bromine and chlorine atoms can aid the interpretation of mass spectra.
 
-<p><a href = "IsotopicDistributions/BromineIsotopicDistribution.pdf">Bromine Isotopic Distributions (PDF)</a>
-<p><a href = "IsotopicDistributions/ChlorineIsotopicDistribution.pdf">Chlorine Isotopic Distributions (PDF)</a>
-<p><a href = "IsotopicDistributions/BromineChlorineIsotopicDistribution.pdf">Bromine + Chlorine Isotopic Distributions (PDF)</a>
+          <p><a href="IsotopicDistributions/BromineIsotopicDistribution.pdf">Bromine Isotopic Distributions (PDF)</a>
+            <p><a href="IsotopicDistributions/ChlorineIsotopicDistribution.pdf">Chlorine Isotopic Distributions (PDF)</a>
+              <p><a href="IsotopicDistributions/BromineChlorineIsotopicDistribution.pdf">Bromine + Chlorine Isotopic Distributions (PDF)</a>
 
-<!--
+                <!--
 
 <p></p>
 
@@ -218,32 +268,33 @@ xyplot(percent ~ mz | distribution.label,
 
 -->
 
-<h3>Example Graphics</h3>
+                <h3>Example Graphics</h3>
 
-<p>Simulated isotopic distributions of a peptide with varying nitrogen-15 incorporation. Function <strong>IsotopicDistributionN</strong>.</p>
-<img src="ExampleFigures/IsotopicDistribution.png" alt="simulated isotopic distribution">
+                <p>Simulated isotopic distributions of a peptide with varying nitrogen-15 incorporation. Function <strong>IsotopicDistributionN</strong>.</p>
+                <img src="ExampleFigures/IsotopicDistribution.png" alt="simulated isotopic distribution">
 
-<p>Highlighted peaks. Function <strong>DrawChromatogram</strong>.</p>
-<img src="ExampleFigures/Chromatogram.png" alt="chromatogram">
+                <p>Highlighted peaks. Function <strong>DrawChromatogram</strong>.</p>
+                <img src="ExampleFigures/Chromatogram.png" alt="chromatogram">
 
-<p>Peptide fragmentation mass spectrum. Function <strong>PeptideSpectrum</strong>.</p>
-<img src="ExampleFigures/PeptideFragmentation.png" alt="fragmentation mass spectrum">
+                <p>Peptide fragmentation mass spectrum. Function <strong>PeptideSpectrum</strong>.</p>
+                <img src="ExampleFigures/PeptideFragmentation.png" alt="fragmentation mass spectrum">
 
-<p>Spectrum similarity. Function <strong>SpectrumSimilarity</strong>.</p>
-<img src="ExampleFigures/SpectralSimilarity.png" alt="head-to-tail plot">
+                <p>Spectrum similarity. Function <strong>SpectrumSimilarity</strong>.</p>
+                <img src="ExampleFigures/SpectralSimilarity.png" alt="head-to-tail plot">
 
 
-      </section>
-    </div>
+    </section>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
+  </div>
 
-    
 
-  </body>
+
+</body>
+
 </html>
